@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:id="@+id/par"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_weight="606"
+    android:layout_margin="10dp"
+    android:background="@drawable/timg"
+    android:layout_height="match_parent">
+
+</LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="678"
+
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/half_black"
+                android:textSize="22sp"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:text="评价"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="总体评价"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/half_black"
+                android:textSize="16sp"/>
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:rating="5"
+                android:numStars="5"
+                android:stepSize="1"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="菜品口味"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/half_black"
+                android:textSize="16sp"/>
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:rating="5"
+                android:numStars="5"
+                android:stepSize="1"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:text="环境&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"
+                android:textColor="@color/half_black"
+                android:textSize="16sp"/>
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:rating="5"
+                android:numStars="5"
+                android:stepSize="1"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_height="wrap_content"
+                android:text="服务&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"
+                android:textColor="@color/half_black"
+                android:textSize="16sp"/>
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:rating="5"
+                android:numStars="5"
+                android:stepSize="1"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:ems="8"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:background="@drawable/h_food_btn_select"
+            android:layout_marginTop="15dp"
+            android:text="提交评价"/>
+    </LinearLayout>
+</LinearLayout>

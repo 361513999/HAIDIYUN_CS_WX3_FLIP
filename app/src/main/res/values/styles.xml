@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- slide -->
+       <style name="AndroidImageSlider_Corner_Oval_Orange">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/indicator_corner_bg</item>
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="shape">oval</item>
+        <item name="padding_left">3dp</item>
+        <item name="padding_right">3dp</item>
+        <item name="padding_top">4dp</item>
+        <item name="padding_bottom">4dp</item>
+
+        <item name="selected_color">#f60</item>
+        <item name="unselected_color">#ffffff</item>
+        <item name="selected_width">6dp</item>
+        <item name="selected_height">6dp</item>
+        <item name="unselected_width">6dp</item>
+        <item name="unselected_height">6dp</item>
+    </style>
+
+    <style name="AndroidImageSlider_Attractive_Rect_Blue">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="shape">rect</item>
+        <item name="padding_left">3dp</item>
+        <item name="padding_right">3dp</item>
+        <item name="padding_top">4dp</item>
+        <item name="padding_bottom">4dp</item>
+
+        <item name="selected_color">#30CCE5</item>
+        <item name="unselected_color">#333333</item>
+        <item name="selected_width">13dp</item>
+        <item name="selected_height">4dp</item>
+        <item name="unselected_width">13dp</item>
+        <item name="unselected_height">4dp</item>
+    </style>
+
+    <style name="AndroidImageSlider_Magnifier_Oval_Black">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="shape">oval</item>
+        <item name="padding_left">3dp</item>
+        <item name="padding_right">3dp</item>
+        <item name="padding_top">4dp</item>
+        <item name="padding_bottom">4dp</item>
+
+        <item name="selected_color">#333333</item>
+        <item name="unselected_color">#33000000</item>
+        <item name="selected_width">8dp</item>
+        <item name="selected_height">8dp</item>
+        <item name="unselected_width">6dp</item>
+        <item name="unselected_height">6dp</item>
+    </style>
+    
+       <style name="menu_pop_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@color/no_color</item>
+        <item name="android:windowBackground">@color/no_color</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowAnimationStyle">@style/config_pop_anim</item>
+    </style>
+    <!-- end of slide -->
+      <style name="config_pop_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@color/no_color</item>
+        <item name="android:windowBackground">@color/no_color</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowAnimationStyle">@style/config_pop_anim</item>
+    </style>
+    
+         <style name="config_pop_style1" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@color/no_color</item>
+        <item name="android:windowBackground">@color/no_color</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowAnimationStyle">@style/config_pop_anim1</item>
+    </style>
+         <style name="config_pop_anim1" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/push_top_in</item>
+        <item name="android:windowExitAnimation">@anim/push_top_out</item>
+    </style>
+     <style name="config_pop_anim" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/push_up_in</item>
+        <item name="android:windowExitAnimation">@anim/push_up_out</item>
+    </style>
+      <style name="toast_pop_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@color/no_color</item>
+        <item name="android:windowBackground">@color/no_color</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+     <style name="buy_pop_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@color/no_color</item>
+        <item name="android:windowBackground">@color/no_color</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowAnimationStyle">@style/buy_pop_anim</item>
+    </style>
+      <style name="d_pop_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@color/no_color</item>
+        <item name="android:windowBackground">@color/no_color</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+       <style name="foc_pop_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@color/no_color</item>
+        <item name="android:windowBackground">@color/no_color</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowAnimationStyle">@style/foc_pop_anim</item>
+    </style>
+        <style name="foc_pop_anim" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/_push_left_in</item>
+        <item name="android:windowExitAnimation">@anim/_push_left_out</item>
+    </style>
+     <style name="buy_pop_anim" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/zoom_enter</item>
+        <item name="android:windowExitAnimation">@anim/zoom_exit</item>
+    </style>
+     <style name="ThemeActivity" mce_bogus="1">
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <!-- activity动画 -->
+    <style name="AnimationActivity" mce_bogus="1">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:activityOpenEnterAnimation">@anim/push_left_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/push_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/push_right_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/push_right_out</item>
+        <item name="android:taskOpenEnterAnimation">@anim/push_left_in</item>
+        <item name="android:taskOpenExitAnimation">@anim/push_left_out</item>
+        <item name="android:taskCloseEnterAnimation">@anim/push_right_in</item>
+        <item name="android:taskCloseExitAnimation">@anim/push_right_out</item>
+        <item name="android:taskToFrontEnterAnimation">@anim/push_left_in</item>
+        <item name="android:taskToFrontExitAnimation">@anim/push_left_out</item>
+        <item name="android:taskToBackEnterAnimation">@anim/push_right_in</item>
+        <item name="android:taskToBackExitAnimation">@anim/push_right_out</item>
+    </style>
+    
+       <style name="menu_labels_style">
+        <item name="android:background">@drawable/fab_label_background</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">8dp</item>
+         <item name="android:paddingRight">8dp</item>
+          <item name="android:paddingBottom">4dp</item>
+           <item name="android:paddingTop">4dp</item>
+    </style>
+    
+      <style name="normal_text">
+        <item name="android:shadowColor">#000011</item>
+        <item name="android:shadowDx">4.0</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">2.0</item>
+    </style>
+     <style name="scrollbar_bitmap_style">
+        <item name="android:scrollbarAlwaysDrawVerticalTrack">true</item>
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:fadeScrollbars">false</item>
+        <item name="android:scrollbarThumbVertical">@drawable/home_lv_scrollbar</item>
+        <item name="android:scrollbarThumbHorizontal">@drawable/home_lv_scrollbar</item>
+        <item name="android:scrollbarSize">5dp</item>
+    </style>
+</resources>

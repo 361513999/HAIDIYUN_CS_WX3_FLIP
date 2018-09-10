@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/no_color"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/actionsheet_single_selector"
+        android:gravity="center"
+        android:text="设置"
+        android:textColor="@color/half_black"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/actionsheet_single_selector"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/wifi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/actionsheet_top_selector"
+                        android:gravity="center_vertical"
+                        android:text="选择合适的WIFI"
+                        android:textColor="@color/half_black"
+                        android:textSize="16sp" />
+					<LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/actionsheet_middle_selector"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/login"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/actionsheet_single_selector"
+                            android:gravity="center_vertical"
+                            android:text="配置IP及注册"
+                            android:textColor="@color/half_black"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/regist_status"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/actionsheet_single_selector"
+                            android:gravity="center_vertical|right"
+                            android:textColor="@color/red"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                      
+					
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/actionsheet_middle_selector"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/con"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/actionsheet_single_selector"
+                            android:gravity="center_vertical"
+                            android:text="同步菜谱数据"
+                            android:textColor="@color/half_black"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/delete"
+                            android:layout_width="0dp"
+                            android:visibility="gone"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/actionsheet_single_selector"
+                            android:gravity="center_vertical|right"
+                            android:text="清除菜谱资源(双击)"
+                            android:textColor="@color/red"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/actionsheet_middle_selector"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/con_video"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/actionsheet_single_selector"
+                            android:gravity="center_vertical"
+                            android:text="同步视频数据"
+                            android:textColor="@color/half_black"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/delete_video"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/actionsheet_single_selector"
+                            android:gravity="center_vertical|right"
+                            android:text="清除视频资源(双击)"
+                            android:textColor="@color/red"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/actionsheet_middle_selector"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/con_adver"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/actionsheet_single_selector"
+                            android:gravity="center_vertical"
+                            android:text="同步推广数据"
+                            android:textColor="@color/half_black"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/delete_adver"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/actionsheet_single_selector"
+                            android:gravity="center_vertical|right"
+                            android:text="清除推广资源(双击)"
+                            android:textColor="@color/red"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+					<RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/actionsheet_middle_selector"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/cook_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/half_black"
+                            android:textSize="16sp" />
+
+                        <pad.com.haidiyun.www.widget.SlipButton
+                            android:id="@+id/cook_btn"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:contentDescription="@null" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/actionsheet_middle_selector"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/swich_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/half_black"
+                            android:textSize="16sp" />
+
+                        <pad.com.haidiyun.www.widget.SlipButton
+                            android:id="@+id/swich_btn"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:contentDescription="@null" />
+                    </RelativeLayout>
+                    
+				<RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:background="@drawable/actionsheet_middle_selector"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/waite_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/half_black"
+                            android:textSize="16sp" />
+
+                        <pad.com.haidiyun.www.widget.SlipButton
+                            android:id="@+id/waite_btn"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:contentDescription="@null" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/actionsheet_middle_selector"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/screen_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/half_black"
+                            android:textSize="16sp" />
+
+                        <pad.com.haidiyun.www.widget.SlipButton
+                            android:id="@+id/screen_btn"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:contentDescription="@null" />
+                    </RelativeLayout>
+                     <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/actionsheet_middle_selector"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/send_dev"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/actionsheet_single_selector"
+                            android:gravity="center_vertical"
+                            android:text="反馈给开发者"
+                            android:textColor="@color/half_black"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/fspace"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/actionsheet_single_selector"
+                            android:gravity="center_vertical|right"
+                            android:textColor="@color/red"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/update"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/actionsheet_bottom_selector"
+                        android:gravity="center_vertical"
+                        android:text="检查更新"
+                        android:textColor="@color/half_black"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/close"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/actionsheet_single_selector"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/half_black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

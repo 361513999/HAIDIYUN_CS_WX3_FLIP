@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<pad.com.haidiyun.www.widget.MapAreaView
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:scaleType="matrix"
+	    android:id="@+id/item"/>
+	 
+	 <AbsoluteLayout
+	     android:id="@+id/clayout"
+	     android:background="@color/no_color"
+	     android:layout_width="match_parent"
+	     android:layout_height="match_parent">
+
+	 
+	     
+
+	 </AbsoluteLayout>
+</FrameLayout>

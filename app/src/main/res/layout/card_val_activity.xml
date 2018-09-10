@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="600dp"
+        android:layout_height="400dp" >
+
+        <FrameLayout
+            android:id="@+id/layout0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/crad_enter" >
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/write_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/img_nfc_writetag" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical"
+            android:paddingBottom="100dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/actionsheet_single_selector"
+                android:gravity="center"
+                android:text="服务员确认"
+                android:textColor="@color/half_black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/actionsheet_top_selector"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:text="账户"
+                    android:textColor="@color/half_black"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@color/seperator_thin" />
+
+                <TextView
+                    android:id="@+id/user"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/no_color"
+                    android:gravity="center_vertical|left"
+                    android:textColor="@color/half_black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/actionsheet_bottom_selector"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:text="密码"
+                    android:textColor="@color/half_black"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@color/seperator_thin" />
+
+                <EditText
+                    android:id="@+id/pass"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/no_color"
+                    android:password="true"
+                    android:inputType="numberSigned"
+                    android:gravity="center_vertical|left"
+                    android:textColor="@color/half_black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/cancle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/actionsheet_top_selector"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/half_black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/actionsheet_bottom_selector"
+                android:gravity="center"
+                android:text="登录"
+                android:textColor="@color/half_black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+
+        <ToggleButton 
+           
+            android:id="@+id/tb"
+            android:layout_gravity="top|right"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="20dp"
+            android:textOn=""
+            android:textOff=""
+            android:layout_height="wrap_content"
+            android:background="@drawable/swich_toog"/>
+    </FrameLayout>
+
+</LinearLayout>

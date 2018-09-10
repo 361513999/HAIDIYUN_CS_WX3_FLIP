@@ -1,0 +1,199 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:flipview="http://schemas.android.com/apk/res-auto" >
+
+     
+
+    <pad.com.haidiyun.www.widget.UDlayout
+        android:id="@+id/ud_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" >
+
+        <pad.com.haidiyun.www.flip.FlipView
+            android:id="@+id/flip_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/no_color"
+            flipview:orientation="horizontal" >
+        </pad.com.haidiyun.www.flip.FlipView>
+
+        <LinearLayout
+            android:id="@+id/buy_layout"
+            android:layout_width="1000px"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="90px"
+                android:layout_height="match_parent"
+                android:background="@drawable/qn" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/actionsheet_single_selector"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/h_dl_s_tab"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/h_dl_tab_no_order"
+                            android:layout_width="140dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/h_dl_s_sel"
+                            android:gravity="center"
+                            android:text="未下单菜品"
+                            android:textColor="#8c7c65"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/h_dl_tab_order"
+                            android:layout_width="140dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="已下单菜品"
+                            android:textColor="#453328"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tz"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" >
+
+                        <TextView
+                            android:id="@+id/qxtz"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/toast_loading_bg"
+                            android:gravity="center"
+                            android:text="取消退赠"
+                            android:textColor="@color/grey"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/qdtz"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/toast_loading_bg"
+                            android:gravity="center"
+                            android:text="确定退增"
+                            android:textColor="@color/half_black"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@drawable/xuxian" />
+
+                <ListView
+                    android:id="@+id/buys"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/no_color"
+                    android:cacheColorHint="@color/no_color"
+                    android:divider="@color/no_color"
+                    android:dividerHeight="4dp"
+                    android:listSelector="@color/no_color" >
+                </ListView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@drawable/xuxian" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp" >
+
+                    <TextView
+                        android:id="@+id/total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:textColor="@color/pink"
+                        android:textSize="25sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/destory"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/toast_loading_bg"
+                            android:gravity="center"
+                            android:text="清空已点"
+                            android:textColor="@color/half_black"
+                            android:textSize="19sp" />
+
+                        <TextView
+                            android:id="@+id/cancle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/toast_loading_bg"
+                            android:gravity="center"
+                            android:text="返回选餐"
+                            android:textColor="@color/half_black"
+                            android:textSize="19sp" />
+
+                        <TextView
+                            android:id="@+id/send"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/toast_loading_bg"
+                            android:gravity="center"
+                            android:text="确定点餐"
+                            android:textColor="#EE0000"
+                            android:textSize="19sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </pad.com.haidiyun.www.widget.UDlayout>
+
+</LinearLayout>

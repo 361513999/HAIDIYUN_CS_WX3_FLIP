@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:button="@null"
+    android:textColor="@color/ck_item"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="2dp"
+    android:gravity="center"
+    android:paddingBottom="2dp"
+    android:layout_marginLeft="3dp"
+    android:background="@drawable/news_item_bg"
+    android:layout_height="match_parent" >
+    
+
+</CheckBox>

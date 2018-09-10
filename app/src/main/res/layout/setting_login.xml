@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/no_color"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+    	 >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:paddingBottom="100dp"
+            android:orientation="vertical" >
+			<LinearLayout 
+			    android:layout_width="match_parent"
+			      android:background="@drawable/actionsheet_top_normal"
+			      android:gravity="center"
+			    android:layout_height="wrap_content">
+			    <TextView 
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			         android:textColor="@color/half_black"
+                    android:textSize="22sp"
+                    android:layout_gravity="center"
+			        android:text="基本地址校验"/>
+			</LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/actionsheet_bottom_normal"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:text="IP"
+                    android:textColor="@color/half_black"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@color/seperator_thin" />
+
+                <EditText
+                    android:id="@+id/ip"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/no_color"
+                    android:gravity="center_vertical|left"
+                    android:textColor="@color/half_black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+           
+            <TextView
+                android:id="@+id/cancle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/actionsheet_top_selector"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/half_black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/actionsheet_bottom_selector"
+                android:gravity="center"
+                android:text="校验"
+                android:textColor="@color/half_black"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

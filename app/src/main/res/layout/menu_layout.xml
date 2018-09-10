@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/menu_view"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="@drawable/toast_loading_bg"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp" >
+
+        <TextView
+            android:id="@+id/menu_item0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="4"
+            android:gravity="center"
+             android:textColor="@color/menu_item"
+            android:text="目录"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/seperator_thin" />
+
+        <TextView
+             android:id="@+id/menu_item1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+             android:textColor="@color/menu_item"
+            android:ems="4"
+            android:gravity="center"
+            android:text="搜索"
+            android:textSize="18sp" />
+         <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/seperator_thin" />
+
+        <TextView
+             android:id="@+id/menu_item2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+             android:textColor="@color/menu_item"
+            android:ems="8"
+            android:gravity="center"
+            android:singleLine="true"
+            android:ellipsize="middle"
+            android:text=" 选择桌台  "
+            android:textSize="18sp" />
+    </LinearLayout>
+	<LinearLayout 
+	    android:id="@+id/menu_lau"
+	    android:layout_width="118px"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    android:layout_marginLeft="15dp"
+	    android:layout_marginTop="20dp"
+	    android:gravity="center_horizontal"
+	    android:layout_marginBottom="200dp">
+        <TextView 
+            android:id="@+id/select_table"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/menu_head"/>
+        <FrameLayout
+            android:id="@+id/menu_v"
+             android:layout_width="match_parent"
+            android:layout_marginTop="-8dp"
+            android:layout_height="wrap_content">
+            
+         <TextView android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@color/my_dish"
+             android:text="菜品目录"
+             android:gravity="center"
+             android:paddingTop="10dp"
+             android:layout_marginTop="4dp"
+             android:paddingBottom="10dp"
+             android:textSize="20sp"
+             android:textColor="@color/menu_item"/>
+          <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/menu_hands"/>
+        </FrameLayout>
+        <LinearLayout android:layout_width="match_parent"
+                       android:layout_marginTop="10dp"
+                      android:layout_height="match_parent">
+            <ListView 
+                		android:id="@+id/menu_list"
+                		android:layout_width="match_parent"
+                		android:background="@color/no_color"
+                		android:cacheColorHint="@color/no_color"
+                		android:divider="@color/seperator_thin"
+                		android:dividerHeight="1dp"
+                		android:scrollbars="none"
+                      android:layout_height="match_parent">
+                
+            </ListView>
+        </LinearLayout>
+        
+	    
+	</LinearLayout>
+    <LinearLayout
+        android:id="@+id/my_dish_layout"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="-22dp"
+        android:layout_marginBottom="-22dp"
+        android:gravity="center"
+        android:background="@drawable/shape_cril_dish"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/buyView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textSize="26sp"
+            
+            android:textColor="@color/white"
+            android:background="@drawable/my_bb"
+            android:paddingBottom="10dp"
+             />
+
+        <TextView
+            android:id="@+id/tipView"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/my_dish"
+            android:padding="4dp"
+            android:textSize="20sp"
+            android:text="我的订单" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/actionsheet_middle_selector"
+    android:layout_height="match_parent">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/pull_to_refresh_list"
+        android:layout_width="400dp"
+        android:layout_height="300dp">
+    <ListView
+        android:id="@+id/menus_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/no_color"
+        android:listSelector="@color/no_color"
+        android:dividerHeight="5dp"
+        android:background="@color/no_color"
+        android:cacheColorHint="@color/no_color">
+    </ListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>
